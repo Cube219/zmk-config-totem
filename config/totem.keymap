@@ -107,23 +107,6 @@
         };
     };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-    };
-
     behaviors {
         mt_tap_pre: mt_tap_pre {
             compatible = "zmk,behavior-hold-tap";
@@ -162,10 +145,10 @@
         nav_layer {
             label = "NAVI";
             bindings = <
-              &none  &kp F9     &kp F10       &kp F11      &kp LS(F11)    &kp PRINTSCREEN  &none     &kp HOME  &kp PAGE_UP    &msc SCRL_UP
-              &none  &mkp LCLK  &mkp RCLK     &kp F12      &kp LS(F12)    &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT      &msc SCRL_DOWN
-&kp LEFT_ALT  &none  &none      &kp LA(HOME)  &kp LA(END)  &none          &mkp MB4         &mkp MB5  &kp END   &kp PAGE_DOWN  &kp PAUSE_BREAK  &kp RIGHT_SHIFT
-                                &trans        &trans       &trans         &kp DELETE       &trans    &trans
+              &none         &kp F9     &kp F10    &kp F11      &kp LS(F11)     &kp PRINTSCREEN  &none     &kp HOME  &kp PAGE_UP    &msc SCRL_UP
+              &kp LEFT_ALT  &kp TAB    &none      &kp F12      &kp LS(F12)     &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT      &msc SCRL_DOWN
+&kp LEFT_ALT  &none         &mkp LCLK  &mkp RCLK  &kp LA(END)  &kp LA(HOME)    &mkp MB4         &mkp MB5  &kp END   &kp PAGE_DOWN  &kp PAUSE_BREAK  &kp RIGHT_SHIFT
+                                       &trans     &trans       &trans          &kp DELETE       &trans    &trans
             >;
         };
 
