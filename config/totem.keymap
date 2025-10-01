@@ -108,7 +108,7 @@
 
         ctrl-x {
             bindings = <&kp LC(X)>;
-            key-positions = <22 12>;
+            key-positions = <21 23>;
             layers = <0>;
             timeout-ms = <30>;
         };
@@ -137,6 +137,13 @@
         ctrl-s {
             bindings = <&kp LC(S)>;
             key-positions = <11 12>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        ctrl-f {
+            bindings = <&kp LC(F)>;
+            key-positions = <13 11>;
             timeout-ms = <30>;
             layers = <0>;
         };
