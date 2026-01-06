@@ -203,6 +203,22 @@
         };
     };
 
+    macros {
+        shift_lclick: shift_lclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&mkp MB1>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+
+            label = "SHIFT_LCLICK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -229,10 +245,10 @@
         nav_layer {
             label = "NAVI";
             bindings = <
-                  &none     &kp F9     &kp F10       &kp F11      &kp LS(F11)    &kp PRINTSCREEN  &none     &kp HOME  &kp PAGE_UP    &msc SCRL_UP
-                  &mkp MB3  &mkp LCLK  &mkp RCLK     &kp F12      &kp LS(F12)    &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT      &msc SCRL_DOWN
-&kp LEFT_CONTROL  &mkp MB4  &mkp MB5   &kp LA(HOME)  &kp LA(END)  &none          &none            &none     &kp END   &kp PAGE_DOWN  &kp PAUSE_BREAK  &kp LEFT_SHIFT
-                                       &trans        &trans       &trans         &kp DELETE       &trans    &trans
+                  &shift_lclick  &kp F9     &kp F10       &kp F11      &kp LS(F11)    &kp PRINTSCREEN  &none     &kp HOME  &kp PAGE_UP    &msc SCRL_UP
+                  &mkp MB3       &mkp LCLK  &mkp RCLK     &kp F12      &kp LS(F12)    &kp LEFT         &kp DOWN  &kp UP    &kp RIGHT      &msc SCRL_DOWN
+&kp LEFT_CONTROL  &mkp MB4       &mkp MB5   &kp LA(HOME)  &kp LA(END)  &none          &none            &none     &kp END   &kp PAGE_DOWN  &kp PAUSE_BREAK  &kp LEFT_SHIFT
+                                            &trans        &trans       &trans         &kp DELETE       &trans    &trans
             >;
         };
 
