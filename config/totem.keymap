@@ -242,10 +242,10 @@
         qwerty_layer_mac {
             label = "MAC";
             bindings = <
-        &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans                          &trans  &trans
-        &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans                          &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans                          &trans  &trans  &trans
-                        &kp LEFT_GUI  &trans  &trans    &trans  &trans  &mt_tap_pre RIGHT_ALT CAPSLOCK
+        &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans                     &trans  &trans
+        &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans                     &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans                     &trans  &trans  &trans
+                        &kp LEFT_GUI  &trans  &trans    &trans  &trans  &mt_tap_pre RIGHT_ALT F18
             >;
         };
 
@@ -272,10 +272,10 @@
         func_layer {
             label = "FUNCTION";
             bindings = <
-       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4    &kp K_CALC       &kp C_AL_CALCULATOR  &kp F18       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP
-       &none         &none         &none         &kp LC(LA(F))  &none           &kp LS(LC(ESC))  &none                &none         &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN
-&none  &none         &none         &none         &none          &none           &none            &none                &none         &none                 &kp C_MUTE         &none
-                                   &tog 1        &trans         &bt BT_CLR      &trans           &trans               &out OUT_TOG
+              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4    &kp C_AL_CALCULATOR  &none   &none         &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP
+              &none         &none         &none         &kp LC(LA(F))  &none           &kp LS(LC(ESC))      &none   &none         &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN
+&kp CAPSLOCK  &none         &none         &none         &none          &none           &none                &none   &none         &none                 &kp C_MUTE         &none
+                                          &tog 1        &trans         &bt BT_CLR      &trans               &trans  &out OUT_TOG
             >;
         };
     };
