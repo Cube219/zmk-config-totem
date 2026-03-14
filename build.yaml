@@ -4,7 +4,7 @@ include:
     artifact-name: dongle-screen
   - board: seeeduino_xiao_ble
     shield: totem_dongle dongle_screen
-    cmake-args: -DCONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY=y -DCONFIG_ZMK_KEYBOARD_NAME=TTM-219_bat
+    cmake-args: -DCONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY=y
     artifact-name: dongle-screen-battery
   - board: seeeduino_xiao_ble
     shield: totem_left
